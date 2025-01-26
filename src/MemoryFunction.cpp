@@ -81,7 +81,7 @@ EM_JS(emscripten::EM_VAL, WasmCreateModule, (uintptr_t code, uintptr_t size),
 #elif defined(MEMFUNC_USE_LIBNX_JIT)
 #include <switch.h>
 #include <cstdio>
-#define JIT_SIZE (32 * 1024 * 1024)
+#define JIT_SIZE (64 * 1024 * 1024)
 static Jit jit;
 static size_t jit_offset = 0;
 static bool jit_initilized = false;
